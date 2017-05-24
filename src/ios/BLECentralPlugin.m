@@ -567,12 +567,12 @@
 
     if (stopNotificationCallbackId) {
 
-        if (error) {
-            NSLog(@"%@", error);
-            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[error localizedDescription]];
-        } else {
+        //if (error) {
+        //    NSLog(@"%@", error);
+        //    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[error localizedDescription]];
+        //} else {
             pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
-        }
+        //}
         [self.commandDelegate sendPluginResult:pluginResult callbackId:stopNotificationCallbackId];
         [stopNotificationCallbacks removeObjectForKey:key];
         [notificationCallbacks removeObjectForKey:key];
