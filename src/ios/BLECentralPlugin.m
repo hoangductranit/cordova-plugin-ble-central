@@ -187,7 +187,7 @@
         NSString *callback = [command.callbackId copy];
         [notificationCallbacks setObject: callback forKey: key];
 
-        [peripheral setNotifyValue:NO forCharacteristic:characteristic];
+        [peripheral setNotifyValue:YES forCharacteristic:characteristic];
 
     }
 
